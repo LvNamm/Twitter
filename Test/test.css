@@ -1,0 +1,36 @@
+body .content {
+    width           : 600px;
+    height          : 260px;
+    background-color: #4880e9;
+}
+
+body .content__header {
+    width           : 100%;
+    display         : flex;
+    justify-content : space-between;
+    padding         : 10px 10px 0 10px;
+    background-color: aqua;
+    position        : sticky;
+    top             : 0;
+}
+
+body .content__header h3 {
+    font-size  : 22px;
+    margin     : 0;
+    cursor     : pointer;
+    text-align : center;
+    align-items: center;
+    margin     : auto 0 auto 0;
+}
+
+body .content__header a {
+    width  : 40px;
+    height : 40px;
+    padding: 4px 0 0 9px;
+}
+
+body .content__header a:hover {
+    border          : 1px;
+    border-radius   : 45px;
+    background-color: #dbd8d8;
+}
