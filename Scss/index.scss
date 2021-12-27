@@ -1,0 +1,135 @@
+$color_blue : #357afa;
+$fixed_left : 40px;
+html{
+    height: 100%;
+}
+.test{
+    width: 250px;
+}
+body {
+    display        : flex;
+    margin         : 0px 50px 0 40px;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    .left-slide-bar {
+        width   : 300px;
+        position: fixed;
+        .logo {
+            width      : 50px;
+            font-size  : 30px;
+            align-items: center;
+            box-sizing : border-box;
+        }
+
+        &__link {
+            display        : flex;
+            width          : fit-content;
+            height         : 50px;
+            padding-left   : 10px;
+            text-decoration: none;
+            box-sizing     : border-box;
+
+            h4 {
+                margin     : auto 0 auto 0;
+                font-size  : 20px;
+                color      : black;
+                font-family: 'Murecho', sans-serif;
+                font-family: 'Roboto', sans-serif;
+
+            }
+
+            &:hover {
+                border          : 1px;
+                border-radius   : 45px;
+                background-color: rgb(219, 216, 216);
+            }
+        }
+
+        &__link--pd5 {
+            padding-right: 25px;
+        }
+
+        &__tweet {
+            width           : 220px;
+            background-color: $color_blue;
+            border-radius   : 45px;
+            padding-left    : 75px;
+            margin-top      : 10px;
+
+            h4 {
+                font-family: Arial, Helvetica, sans-serif;
+                color      : white;
+            }
+
+            &:hover {
+                background-color: rgb(0, 68, 255);
+            }
+        }
+        &__profile{
+            height: 60px;
+            width: 240px;
+            border-radius: 45px;
+            display: flex;
+            position: fixed;
+            justify-content: space-between;
+            align-items: center;
+            color: black;
+            &__img{
+                width: 40px;
+                height: 40px;
+                border: 1px none ;
+                border-radius: 45px;
+            }
+            &__div{
+                p{
+                    margin: 0;
+                }
+                .email_name{
+                    color: rgb(148, 145, 145);
+                }
+            }
+        }
+    }
+
+    .content {
+        width           : 600px;
+        height          : 260px;
+        background-color: rgb(72, 128, 233);
+            &__header{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 10px 0 10px;
+                background-color: aqua;
+                position: sticky;
+                top: 0;
+                & h3{
+                    font-size: 22px;
+                    margin: 0;
+                    cursor: pointer;
+                    text-align: center;
+                    align-items: center;
+                    margin: auto 0 auto 0;
+                }
+                & a{
+                    width: 40px;
+                    height: 40px;
+                    padding: 4px 0 0 9px;
+                    &:hover{
+                        border          : 1px;
+                        border-radius   : 45px;
+                        background-color: rgb(219, 216, 216);
+                    }
+                }
+        }
+
+    }
+
+    .right_slide_bar {
+        width           : 400px;
+        height          : 1000px;
+        background-color: red;
+    }
+
+}
