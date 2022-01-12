@@ -328,3 +328,16 @@ body .content {
     display: none;
   }
 }
+
+.right_slide_bar__dow {
+  position: fixed;
+  margin-top: 360px;
+  width: 350px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.right_slide_bar__dow > a > span {
+  padding-right: 12px;
+  color: rgb(83, 100, 113);
+  font-size: 13px;
+}
